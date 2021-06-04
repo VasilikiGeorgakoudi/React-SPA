@@ -20,7 +20,7 @@ background : ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 export const InfoWrapper = styled.div `
 display:grid;
 z-index:1;
-height:100vh;
+height:800px;
 width:100%;
 max-width:1100px;
 margin-right:auto;
@@ -29,12 +29,12 @@ padding:0px 20px;
 justify-content:center;
 @media screen and (max-width: 800px){
     
-    height:${({big})=> (big ? '124vh' : '110vh')};
+    height:${({big})=> (big ? '840px' : '700px')};
     
 }
 @media screen and (max-width: 400px){
     
-    height:${({big})=> (big ? '160vh' : '130vh')};
+    height:${({big})=> (big ? '890px' : '720px')};
     
 }
 `
@@ -43,14 +43,14 @@ justify-content:center;
 
 export const InfoRow = styled.div `
 display: flex;
-
+margin-top:45px;
 align-items: center;
 justify-content:center;
 flex-direction: ${({imgStart})=> (imgStart ? 'row-reverse' : 'row')};
 
 @media screen and (max-width:768px){
     flex-direction: ${({imgStart}) => (imgStart ? 'column' : 'column-reverse')};
-    
+    margin-top:0px;
 }
 `
 export const Column1 = styled.div 
@@ -83,6 +83,7 @@ font-weight: 700;
 letter-spacing:1.4px;
 text-transform: uppercase;
 margin-bottom:10px;
+
 
 `
 
@@ -122,12 +123,13 @@ height:100%;
 export const Img = styled.img
 `
 width:100%;
-max-width:580px;
+max-width:460px;
 
 margin:0 0 15px 0;
 padding-right:0;
 @media screen and (max-width:768px){
-    max-width:400px;
+    max-width:350px;
+    
 }
 
 `

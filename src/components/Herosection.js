@@ -10,7 +10,7 @@ import {
     ArrowForward,
     ArrowRight
 } from './heroElements'
-import {Button} from './ButtonElement'
+import { Button } from './ButtonElement'
 import Video from '../video/video6.mp4'
 
 
@@ -23,7 +23,7 @@ const Herosection = () => {
     return (
         <HeroContainer>
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+                <VideoBg autoPlay loop muted playsinline src={Video} type='video/mp4'/>
             </HeroBg>
             <HeroContent>
                 <HeroH1>Καλλιεργούμε με αγάπη την Ελληνική γη</HeroH1>
@@ -32,16 +32,18 @@ const Herosection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                 <Button  
-                to="signup" 
+                to="about" 
                 onMouseEnter={onHover} 
                 onMouseLeave={onHover}
                 primary='true'
                 dark='true'
+                siteBtn='true'
+                offset={-80}
                 >
-                Get Started
+                Μάθε περισσότερα
                 {hover ? <ArrowForward /> : <ArrowRight/>}
                 </Button>
-            </HeroBtnWrapper>
+                </HeroBtnWrapper>
             </HeroContent>
             
             

@@ -14,24 +14,24 @@ function ProductSection() {
             <ProductWrapper>
                 <ProductCard>
                     
-                        <Img src={icon4}/> 
+                        <Img src={icon4} alt="ηλιοσπορος"/> 
                       <ProductTitle>Ηλιόσπορους</ProductTitle>
                       <ProductDescription>Ελάχιστες ξένες ύλες και μέγιστη απόδοση σε λάδι.</ProductDescription>
                  </ProductCard>
                     <ProductCard>
-                    <Img src={icon1}/> 
-                      <ProductTitle>Ελεοκράμβη</ProductTitle>
-                      <ProductDescription>Γερμανικός σπόρος με υψηλά χαρακτηριστικά καθαρότητας και μεγάλης περιεκτικότητας σε λάδι</ProductDescription>
+                    <Img src={icon1} alt="ελαιοκραμβη"/> 
+                      <ProductTitle>Ελαιοκράμβη</ProductTitle>
+                      <ProductDescription>Γερμανικός σπόρος με υψηλά χαρακτηριστικά καθαρότητας και μεγάλης περιεκτικότητας σε λάδι.</ProductDescription>
                       </ProductCard>
                     <ProductCard>
-                    <Img src={icon3}/> 
+                    <Img src={icon3} alt="λουπινο"/> 
                       <ProductTitle>Λούπινο</ProductTitle>
-                      <ProductDescription>Ψυχανθές κτηνοτροφικό με υψηλή περιεκτικότητα πρωτεΐνης</ProductDescription>
+                      <ProductDescription>Ψυχανθές κτηνοτροφικό με υψηλή περιεκτικότητα πρωτεΐνης.</ProductDescription>
                     </ProductCard>
                     <ProductCard>
-                    <Img src={icon2}/> 
+                    <Img src={icon2} alt="μαλακο σιταρι"/> 
                       <ProductTitle>Μαλακό σιτάρι</ProductTitle>
-                      <ProductDescription> Ειδικό για την παραγωγή ψωμιού. Με υψηλή περιεκτικότητα σε πρωτεϊνη και γλουτένη)</ProductDescription>
+                      <ProductDescription> Ειδικό για την παραγωγή ψωμιού. Με υψηλή περιεκτικότητα σε πρωτεϊνη και γλουτένη.</ProductDescription>
                      
                     </ProductCard>
                     

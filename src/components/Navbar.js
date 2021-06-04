@@ -38,13 +38,13 @@ const NavBar = ({toggle}) =>
         <IconContext.Provider value={{color:'#fff'}}>
          <Nav scrollNav={scrollNav}>
              <NavbarContainer>
-                 <NavLogo to="/" onClick={toggleHome}>Biotropos</NavLogo>
+                 <NavLogo to="/" onClick={toggleHome}>Biοκαλλιέργεια</NavLogo>
                  <MobileIcon onClick={toggle}>
                      <FaBars/>
                  </MobileIcon>
                  <NavMenu>
                      <NavItem>
-                         <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80} activeClass="active">Παραγογός</NavLinks>
+                         <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true" offset={-80} activeClass="active">Παραγωγός</NavLinks>
                      </NavItem>
                      
                      <NavItem>
@@ -56,6 +56,9 @@ const NavBar = ({toggle}) =>
                      
                      <NavItem>
                          <NavLinks to="contact" smooth={true} duration={500} spy={true} exact="true" offset={-80} activeClass="active">Επικοινωνία</NavLinks>
+                     </NavItem>
+                     <NavItem>
+                         <NavLinks to="customers" smooth={true} duration={500} spy={true} exact="true" offset={-80} activeClass="active">Πελάτες</NavLinks>
                      </NavItem>
 
                  </NavMenu>

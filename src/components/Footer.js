@@ -2,8 +2,9 @@ import React from 'react'
 
 import { FaFacebook, FaTelegram } from 'react-icons/fa'
 import {
-    FooterContainer,PhoneNumber,FooterWrap,SocialIconLink,SocialIcons,SocialLogo,WebsiteRights,Telephone,ContactInfo}
+    FooterContainer,PhoneNumber,FooterWrap,SocialIconLink,SocialLogo,SocialIcons,WebsiteRights,Telephone,ContactInfo}
     from './footerElements'
+
 import {animateScroll as scroll} from 'react-scroll'
 const toggleHome = () =>{
     scroll.scrollToTop();
@@ -17,14 +18,14 @@ function Footer() {
                 
                         
                             <SocialLogo to='/' onClick={toggleHome}>
-                                Biotropos
+                                Bioκαλλιέργεια
                             </SocialLogo>
-                            <WebsiteRights>Biotropos © {new Date().getFullYear()} all rights Reserved.</WebsiteRights>
+                            <WebsiteRights>© {new Date().getFullYear()} all rights Reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href="/" target='_blank'aria-label="Facebook">
                                     <FaFacebook />
                                 </SocialIconLink>
-                                <SocialIconLink href='mailto:bio-tropos.gr@gmail.com'>
+                                <SocialIconLink href='mailto:biokaliergia.gr@gmail.com'>
                                     <FaTelegram/>
                                 </SocialIconLink>
                             </SocialIcons>
@@ -33,8 +34,9 @@ function Footer() {
                         
                     
                     <ContactInfo>
-                            <Telephone>Τηλέφωνο επικοινωνίας</Telephone>
+                            <Telephone>Τηλέφωνο επικοινωνίας:</Telephone>
                             <PhoneNumber href='tel:+306977085619'> 6977085619</PhoneNumber>
+                           
                     </ContactInfo>
             </FooterWrap>
         </FooterContainer>

@@ -93,9 +93,10 @@ justify-self:start;
 cursor:pointer;
 text-decoration:none;
 font-size:1.5rem;
-flex-basis:5%;
-align-self:center;
+flex-basis:10%;
+margin-left:10px;
 
+font-family: 'Alegreya Sans', sans-serif;
 font-weight:bold;
 &:hover{
     color:#01bf71;
@@ -104,6 +105,7 @@ font-weight:bold;
 }
 @media screen and (max-width:820px){
     margin-bottom:16px;
+    margin-left:0px;
 }`
 export const WebsiteRights = styled.small
 `
@@ -121,6 +123,7 @@ export const SocialIcons = styled.div `
 flex-basis:10%;
 text-align:center;
 width:240px;
+
 @media screen and (max-width:820px){
     margin-bottom:16px;
 }
@@ -129,7 +132,7 @@ width:240px;
 export const ContactInfo = styled.div
 `
 display:flex;
-flex-basis:50%;
+flex-basis:60%;
 flex-direcrion:row;
 justify-content:center;
 align-items:center;

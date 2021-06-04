@@ -6,8 +6,7 @@ import {
     SidebarWrapper,
     SidebarMenu,
     SidebarLink,
-    SidebarRouter,
-    SideBtnWrap
+    
 } from './sidebarElements'
 
 const Sidebar = ({isOpen,toggle}) => {
@@ -19,14 +18,12 @@ const Sidebar = ({isOpen,toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>Λίγα λόγια για μας</SidebarLink>
-                    <SidebarLink to="location"onClick={toggle}>Που βρισκόμαστε</SidebarLink>
-                    <SidebarLink to="product"onClick={toggle}>Προιόντα</SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>Επικοινωνία</SidebarLink>
+                    <SidebarLink to="about" onClick={toggle} offset={-80}>Λίγα λόγια για μας</SidebarLink>
+                    <SidebarLink to="location"onClick={toggle} offset={-80}>Που βρισκόμαστε</SidebarLink>
+                    <SidebarLink to="product"onClick={toggle} offset={-80}>Προιόντα</SidebarLink>
+                    <SidebarLink to="contact" onClick={toggle} >Επικοινωνία</SidebarLink>
                 </SidebarMenu>
-                <SideBtnWrap>
-                    <SidebarRouter to="/signin"> Sign In</SidebarRouter>
-                </SideBtnWrap>
+               
                 
             </SidebarWrapper>
         </SidebarContainer>

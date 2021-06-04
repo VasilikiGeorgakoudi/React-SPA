@@ -37,6 +37,7 @@ export const NavLogo = styled(LinkRouter)`
   margin-left:24px;
   font-weight: bold;
   text-decoration:none;
+  font-family: 'Alegreya Sans', sans-serif;
 `;
 export const MobileIcon = styled.div`
  display:none;

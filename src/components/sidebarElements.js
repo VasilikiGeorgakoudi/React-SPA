@@ -38,10 +38,12 @@ display:grid;
 grid-template-colums:1fr;
 grid-template-rows:repeat(6,80px);
 text-align:center;
+padding-top:30px;
 
 @media screen and (max-width:480px)
 {
     grid-template-rows:repeat(5,80px);
+    padding-top:50px;
 }
 
 `

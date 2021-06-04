@@ -40,7 +40,7 @@ export const ProductH1 = styled.h1`
 export const ProductP = styled.p
 `
 color:#fff;
-font-size;1.7rem;
+font-size:1.3rem;
 margin-bottom:40px;
 text-align:center;
 background-color:#01bf71;
@@ -80,7 +80,7 @@ flex-direction:column;
 justify-content:flex-start;
 align-items:center;
 border-radius:10px;
-max-height:340px;
+
 height:330px;
 padding:30px;
 box-shadow:0 1px 3px rgba(0,0,0,0.2);
@@ -91,6 +91,9 @@ transition: all 0.2s ease-in-out;
     transition:all 0.2s ease-in-out;
     cursor:pointer;
 
+}
+@media screen and (max-width:400px){
+    height:360px;
 }
 `
 export const Img = styled.img
