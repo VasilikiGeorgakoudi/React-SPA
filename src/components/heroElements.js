@@ -11,7 +11,7 @@ height:100vh;
 position:relative;
 z-index:1;
 
-:before{
+&:before{
     content:'';
     position:absolute;
     top:0;
@@ -45,6 +45,8 @@ background:#232a34;
 `
 export const HeroContent = styled.div
 `
+
+
 z-index:3;
 max-width: 800px;
 position:absolute;
@@ -53,6 +55,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 margin-top:40px;
+
 
 `
 export const HeroH1 = styled.h1

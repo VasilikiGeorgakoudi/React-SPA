@@ -1,41 +1,30 @@
-
 import './App.css';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Updated import for Routes
+import Home from './pages/index';
 
-import Home from './pages/index'
-import SignIn from './pages/signin'
-import React, { useEffect } from 'react'
-import ReactDOMServer from 'react-dom/server';
-import Reactga from "react-ga";
-
-
-
-
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga4'; // Updated to react-ga4
+// import ReactDOMServer from 'react-dom/server';
 
 function App() {
-
   useEffect(() => {
-    Reactga.initialize('G-CZ1BXWM905');
-    //to report page view
-    Reactga.pageview('/home');
+    ReactGA.initialize('G-CZ1BXWM905');
+    // To report page view
+    ReactGA.send({ hitType: 'pageview', page: '/home' }); // Updated for react-ga4
 
-  }, [])
+  }, []);
 
   return (
     <Router>
-
-
-      <Route path='/' component={Home} exact />
-      <Route path='/' component={SignIn} exact />
-
-
-
-
+      <Routes> {/* Use Routes instead of Switch in React Router v6 */}
+        <Route path="/" element={<Home />} exact />
+      </Routes>
     </Router>
   );
 }
 
-ReactDOMServer.renderToString(<App />)
+// If you're doing SSR, you would usually have this in a Node.js server file
+// ReactDOMServer.renderToString(<App />);
 
 export default App;
